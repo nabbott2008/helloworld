@@ -27,6 +27,13 @@ $ helm install --name helloworld helloworld
 |`image.tag`| Image tag                                    |         `develop`                                                                                                         |
 | `image.pullPolicy`                              | Image pull policy                                                                                                                                              | `IfNotPresent`                                                     |
 | `service.port`                                     | Number of replicas to run                                                                                                                                                           | `3`                                                                |
+| `ingress.host`                                     | Ingress host header                                                                                                                                                           | `test.com`                                                                |
+
+### Testing on Minikube
+
+If you have installed the chart in Minikube, and used default values, you can test with this curl from the host machine:
+
+```curl -H "Host: test.com" $(minikube ip)````
 
 ### Using as template web service chart
 
