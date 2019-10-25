@@ -1,6 +1,6 @@
 # Hello World Helm Chart
 
-This is a basic demonstration Helm chart
+This is a basic demonstration Helm chart but can double up as a chart to server basic web pages from any docker container.
 
 ## Pre Requisites:
 
