@@ -27,7 +27,9 @@ $ helm install --name helloworld helloworld
 |`image.tag`| Image tag                                    |         `develop`                                                                                                         |
 | `image.pullPolicy`                              | Image pull policy                                                                                                                                              | `IfNotPresent`                                                     |
 | `replicaCount`                                     | Number of replicas to run                                                                                                                                                           | `3`                                                                |
-| `ingress.host`                                     | Ingress host header                                                                                                                                                           | `test.com`                                                                |
+| `ingress.host`                                     | Ingress host header                                                                                                                                                           | `test.com`   
+| `service.port`                                     | Port service is listening on                                                                                                                                                         | `80` 
+| `target.port`                                     | Port container is listening on                                                                                                                                                          |`5000` |
 
 ### Testing on Minikube
 
