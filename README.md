@@ -26,7 +26,7 @@ $ helm install --name helloworld helloworld
 | `image.repository`                                       | Image repository                                                                                                                                               | `never152/helloworld`                                            
 |`image.tag`| Image tag                                    |         `develop`                                                                                                         |
 | `image.pullPolicy`                              | Image pull policy                                                                                                                                              | `IfNotPresent`                                                     |
-| `service.port`                                     | Number of replicas to run                                                                                                                                                           | `3`                                                                |
+| `replicaCount`                                     | Number of replicas to run                                                                                                                                                           | `3`                                                                |
 | `ingress.host`                                     | Ingress host header                                                                                                                                                           | `test.com`                                                                |
 
 ### Testing on Minikube
