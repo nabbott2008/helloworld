@@ -33,7 +33,9 @@ $ helm install --name helloworld helloworld
 
 If you have installed the chart in Minikube, and used default values, you can test with this curl from the host machine:
 
-```curl -H "Host: test.com" $(minikube ip)````
+```
+$ curl -H "Host: test.com" $(minikube ip)
+```
 
 ### Using as template web service chart
 
